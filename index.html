@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<script src="//connect.soundcloud.com/sdk.js"></script>
+<script>
+  SC.initialize({
+    client_id: "4557645f8a2964918124da68fbd4e1b0",
+    redirect_uri: "http://example.com/callback.html",
+  });
+</script>
+<script>
+SC.get('/users', {q: 'dynastrax'}, function (users) {
+  console.log(users);
+});
+</script>
+
+</body>
+</html>
